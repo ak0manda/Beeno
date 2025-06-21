@@ -1,0 +1,156 @@
+/* css/style.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; font-family: "Space Grotesk", sans-serif; color: #000; }
+body { overflow-x: hidden; overflow-y: auto; }
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* oben beginnen */
+  align-items: flex-start;   /* links und oben */
+  padding-top: 1rem;         /* fast ganz oben */
+  background: #fff;
+  position: relative;
+}
+
+.blank { height: 100vh; background: #f9f9f9; }
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 30ch;
+  margin: 0 auto;
+  padding: 0;  /* kein Padding */
+}
+
+.app-icon { width: 120px; height: auto; margin-bottom: 1rem; }
+.app-title { font-size: 2.5rem; font-weight: 400; margin-bottom: 0.5rem; }
+.app-description { font-size: 1rem; margin-bottom: 2rem; }
+
+.button-group { display: flex; gap: 1rem; margin-bottom: 2rem; }
+
+.myButton { width: 100px; height: 50px; font-size: 20px; color: #000; background: linear-gradient(to left bottom, #d6bfff, #ad80ff); border: none; border-radius: 10px; font-family: "Space Grotesk", sans-serif; transition: all 0.25s ease; }
+.myButton:hover { transform: scale(1.05); }
+
+.toggle-content { width: 100%; max-width: 40ch; text-align: left; margin-bottom: 2rem; }
+.hidden { display: none; }
+
+toggle-content h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.toggle-content ol, .toggle-content ul { margin-left: 1rem; margin-bottom: 1rem; }
+.toggle-content li { margin-bottom: 0.5rem; }
+.toggle-content code { background: #eee; padding: 0 0.25rem; border-radius: 3px; }
+.toggle-content strong { font-weight: 400; }
+.toggle-content em { font-style: italic; }
+
+/* Styles for Get Section */
+.download-link {
+  font-size: 1rem;
+  color: #4aa3df;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.download-link:hover {
+  text-decoration: underline;
+}
+.icon-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.icon-button img {
+  width: 40px;
+  height: auto;
+}
+.icon-button:hover {
+  transform: scale(1.1);
+}
+/* QR-Code unter den Buttons */
+.qr-image {
+  width: 300px;       /* hier die gewünschte Breite einstellen */
+  height: auto;
+  margin: 1rem auto; /* zentriert mit oben/unten Abstand */
+  display: block;    /* sorgt dafür, dass margin auto wirkt */
+}
+.hidden {
+  display: none !important;
+}
+/* Footer */
+.site-footer {
+  padding: 1rem;
+  text-align: center;
+  background: #f1f1f1;
+}
+.footer-button {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to left bottom, #d6bfff, #ad80ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.footer-button:hover {
+  transform: scale(1.05);
+}
+
+/* Imprint-Section */
+.imprint-section {
+  padding: 2rem 1rem;
+  background: #fff;
+  text-align: center;
+  max-width: 40ch;
+  margin: 0 auto;
+}
+.imprint-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.imprint-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* wiederverwenden der .hidden-Klasse */
+.hidden {
+  display: none !important;
+}
+
+.license-link {
+  color: #4aa3df;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+.license-link:hover {
+  text-decoration: underline;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;         /* volle Breite */
+  max-width: 100%;     /* keine Obergrenze mehr */
+  margin: 1rem auto;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;         /* passt sich jetzt dem Container an */
+  height: 100%;
+}

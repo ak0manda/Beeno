@@ -1,0 +1,144 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beeno</title>
+
+  <!-- Google Font: Space Grotesk -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Eigenes CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="centered">
+      <img src="images/BeenoAppIcon.png" alt="Beeno App Icon" class="app-icon" />
+      <h1 class="app-title">Beeno</h1>
+      <p class="app-description">
+        A tiny macOS utility that mirrors an external monitor in a resizable window.
+      </p>
+
+      <!-- Buttons zum Ein-/Ausblenden -->
+      <div class="button-group">
+        <button id="btnHow" class="myButton">How</button>
+        <button id="btnGet" class="myButton">Get</button>
+        <button id="btnWhat" class="myButton">What</button>
+      </div>
+
+      <!-- Inhalte für How, Get, What -->
+      <div id="contentHow" class="toggle-content hidden">
+        <h2>Quick-Start</h2>
+        <ol>
+          <li><strong>Download</strong> <code>Beeno.zip</code> and extract.</li>
+          <li>Drag <strong>Beeno.app</strong> to <strong>Applications</strong> (optional).</li>
+          <li>First launch: <strong>Right-click</strong> → <strong>Open</strong> → <strong>Open</strong> (bypass Gatekeeper).</li>
+          <li>Click <strong>OK</strong> when macOS asks for <em>Screen & System Audio Recording</em> access.</li>
+          <li>The 🐝 icon appears in the menu bar—ready to use!</li>
+        </ol>
+        <h2>Actions</h2>
+        <ul>
+          <li>Show / hide preview - <strong>Left-click</strong> Bee icon or press <strong>⌥B</strong></li>
+          <li>Switch mirrored display - <strong>Right-click</strong> Bee icon → choose monitor</li>
+          <li>Quit Beeno - <strong>Right-click</strong> Bee icon → <strong>Quit Beeno</strong></li>
+        </ul>
+      </div>
+      <div id="contentGet" class="toggle-content hidden">
+        <h2>Download</h2>
+        <p><a href="https://ulikaufmann.de/Beeno.zip" download class="download-link">Beeno.zip</a></p>
+          <!-- Lizenz-Vermerk -->
+          <p>
+            License:
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en"
+               target="_blank" rel="noopener"
+               class="license-link">
+              CC BY-NC-ND 4.0
+            </a>
+          </p>
+  <br>
+  <p>If you found this helpful, feel free to buy me a pint &#127866 or send some sats.</p>
+  <div class="icon-group">
+      <a href="http://paypal.me/ULISNACKS/5"
+     target="_blank"
+     class="icon-button"
+     aria-label="PayPal Donate">
+    <img src="images/paypal.svg" alt="PayPal">
+  </a>
+ 
+     <button id="btnLightning"
+             class="icon-button"
+             aria-label="Lightning Donate">
+      <img src="images/lightning.svg" alt="Lightning">
+    </button>
+
+       <button id="btnBitcoin"
+           class="icon-button"
+           aria-label="Bitcoin Donate">
+     <img src="images/bitcoin.svg" alt="Bitcoin">
+   </button>
+  </div>
+
+ <!-- Bitcoin-QR, initially hidden -->
+ <img id="bitcoinQr"
+      src="images/bitcoin1.jpeg"
+      alt="Bitcoin QR Code"
+      class="qr-image hidden">
+
+   <!-- QR-Code, initially hidden -->
+ <img id="lightningQr"
+      src="images/lightning1.jpeg"
+      alt="Lightning QR Code"
+      class="qr-image hidden">
+
+      </div>
+      <div id="contentWhat" class="toggle-content hidden">
+        <p>
+          Beeno is a simple, lightweight macOS utility that mirrors your first external display in a resizable preview window on your main screen. Ideal for quickly checking presentations, demos, or sharing content without rearranging your desktop setup.
+          <br /><br /></p>
+        <p>
+          Especially designed for <strong>Capture One users</strong>, Beeno lets digital operators effortlessly project zooms or live views onto a client or photographer’s screen, all from the convenience of your main display.
+        </p>
+        + <!-- Video embed -->
+        <div class="video-container">
+          <iframe
+            id="beenoVideo"
+            src="https://www.youtube.com/embed/3BceFwlJvjA?si=CR3apNZHgrc5pG3s&vq=hd1080&rel=0&modestbranding=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- Footer mit Imprint/Contact-Button -->
+    <footer class="site-footer">
+      <button id="btnImprint" class="footer-button">Imprint / Contact</button>
+    </footer>
+  
+    <!-- Imprint-Section (auf Englisch, TMG-konform) -->
+    <section id="imprint" class="imprint-section hidden">
+      <h2>Imprint / Contact</h2>
+      <p>
+        <strong>Uli Kaufmann</strong><br>
+        10317 Berlin<br>
+        Germany<br>
+        Email: <a href="mailto:hallo@ulikaufmann.de">hallo@ulikaufmann.de</a>
+      </p>
+    </section>
+      <!-- JS zum Toggle -->
+  <script src="js/main.js"></script>
+</body>
+</html>
