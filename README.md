@@ -47,9 +47,6 @@ A tiny macOS utility that mirrors an external monitor in a resizable window.
 -----------------------------------------------------------------------
 
 ## License
-**Creative Commons BY-NC-ND 4.0**  
+**Apache-2.0**  
 © 2025 Uli Kaufmann
 
-You **may** share and redistribute Beeno free of charge.  
-You **may not** sell, modify, or create derivative works without explicit permission.  
-Full terms: <https://creativecommons.org/licenses/by-nc-nd/4.0/>
