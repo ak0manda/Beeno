@@ -154,3 +154,17 @@ toggle-content h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
   width: 100%;         /* passt sich jetzt dem Container an */
   height: 100%;
 }
+
+.view-code-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;           /* Abstand zwischen Text & Icon */
+  text-decoration: none;
+  color: inherit;
+}
+
+.github-icon {
+  width: 40px;           /* hier die neue, größere Icon-Größe */
+  height: auto;
+}
+
