@@ -19,6 +19,11 @@ document.getElementById('btnHow').addEventListener('click', () => showSection('c
 document.getElementById('btnGet').addEventListener('click', () => showSection('contentGet'));
 document.getElementById('btnWhat').addEventListener('click', () => showSection('contentWhat'));
 
+// **Neu**: direkt beim Laden die "Get"-Sektion anzeigen
+document.addEventListener('DOMContentLoaded', () => {
+  showSection('contentGet');
+});
+
 // Lightning-QR-Code ein/ausblenden
 document.getElementById('btnLightning')
   .addEventListener('click', () => {
